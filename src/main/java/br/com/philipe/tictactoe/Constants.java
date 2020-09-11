@@ -1,4 +1,4 @@
-package br.com.philipe;
+package br.com.philipe.tictactoe;
 
 public class Constants {
 	

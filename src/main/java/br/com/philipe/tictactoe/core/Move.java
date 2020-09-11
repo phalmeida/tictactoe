@@ -1,4 +1,4 @@
-package br.com.philipe.core;
+package br.com.philipe.tictactoe.core;
 
 public class Move {
 	int i;

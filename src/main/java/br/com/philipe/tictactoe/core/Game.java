@@ -1,6 +1,6 @@
-package br.com.philipe.core;
+package br.com.philipe.tictactoe.core;
 
-import br.com.philipe.Constants;
+import br.com.philipe.tictactoe.Constants;
 
 public class Game {
 	
