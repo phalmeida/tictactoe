@@ -1,6 +1,7 @@
 package br.com.philipe.tictactoe.core;
 
 import br.com.philipe.tictactoe.Constants;
+import br.com.philipe.tictactoe.ui.UI;
 
 public class Game {
 	
@@ -8,7 +9,8 @@ public class Game {
 	Player[] players = new Player[Constants.SYMBOL_PLAYERS.length];
 	
 	public void play() {
-		
+		UI.printGameTitle();
+		UI.readInput("Nome do jogador: ");
 	}
 
 }

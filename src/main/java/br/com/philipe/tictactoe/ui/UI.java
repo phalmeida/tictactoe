@@ -1,16 +1,31 @@
 package br.com.philipe.tictactoe.ui;
 
+import br.com.softblue.commons.io.Console;
+
 public class UI {
 	
-	void printText(String text){
+	public static void printText(String text){
 		System.out.println(text);
 	}
 	
-	void printTextWhithNoNewLine(String text) {
+	public static void printTextWhithNoNewLine(String text) {
 		System.out.print(text);
 	}
 	
-	void printNewLine() {
+	public static void printNewLine() {
 		System.out.println();
 	}
+	
+	public static void printGameTitle() {
+		printText("=====================");
+		printText("|  JOGO DA VELHA |");
+		printText("=====================");
+		printNewLine();
+	}
+	
+	public static String readInput(String text) {
+		printTextWhithNoNewLine(text + " ");
+		return Console.readString();
+	}
+	
 }
