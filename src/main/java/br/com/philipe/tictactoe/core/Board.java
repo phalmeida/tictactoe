@@ -5,7 +5,7 @@ import br.com.philipe.tictactoe.ui.UI;
 
 public class Board {
 	
-	char[][] matrix = new char[Constants.BOARD_SIZE][Constants.BOARD_SIZE];
+	private char[][] matrix = new char[Constants.BOARD_SIZE][Constants.BOARD_SIZE];
 	
 	public Board() {
 		clear();
@@ -50,10 +50,10 @@ public class Board {
 	}
 	
 	public boolean play(Player player, Move move){
-		int i = move.i;
-		int j = move.j;
+		int i = move.getI();
+		int j = move.getJ();
 		
-		matrix[i][j] = player.symbol;
+		matrix[i][j] = player.getSymbol();
 		
 		//TODO checar se o jogador ganhou
 		return false;
