@@ -49,9 +49,18 @@ public class Board {
 		return true;
 	}
 	
-	public boolean play(Player player, Move move){
+	public boolean play(Player player, Move move) throws InvalidMoveException{
 		int i = move.getI();
 		int j = move.getJ();
+		
+		
+		if(i < 0 || j < 0 || i >= Constants.BOARD_SIZE || j >= Constants.BOARD_SIZE) {
+			throw new InvalidMoveException("O intervalo da jogada e invalido");
+		}
+		
+		if(matrix[i][j] != ' ') {
+			throw new InvalidMoveException("Essa jogada ja foi realizada");
+		}
 		
 		matrix[i][j] = player.getSymbol();
 		
