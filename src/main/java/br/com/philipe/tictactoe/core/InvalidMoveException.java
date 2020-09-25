@@ -2,7 +2,6 @@ package br.com.philipe.tictactoe.core;
 
 public class InvalidMoveException extends Exception {
 
-
 	/**
 	 * 
 	 */
